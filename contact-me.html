@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <h2>To contact us, provide us your information!</h2>
+  <form action="mailto:ttejas@gmail.com" method="post" enctype="text/plain">
+    <ul>
+      <li>
+        <label for="name">Enter your name:</label>
+        <input type="text" name="" value="" id="name">
+      </li>
+      <br>
+      <li>
+        <label for="country">Choose country of origin:</label>
+        <input list="countries-datalist" id="country-selector">
+        <datalist id="countries-datalist">
+          <option value="India">
+          <option value="Pakistan"></option>
+          <option value="Siri Lanka"></option>
+        </datalist>
+      </li>
+      <li>
+        <p>Choose your skills:</p>
+        <label for="C#">C#</label>
+        <input type="checkbox" id="C#" checked>
+        <label for="Java">Java</label>
+        <input type="checkbox" id="Java">
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" id="JavaScript">
+      </li>
+      <li>
+        <p>Choose your gender:</p>
+        <div>
+          <input type="radio" id="male" name="gender" checked>
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender">
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="other" name="gender">
+          <label for="other">Other</label>
+        </div>
+      </li>
+      <li>
+        <p>Select your Date Of Birth:</p>
+        <input type="date" value="1990-02-16">
+      </li>
+      <li>
+        <p>Provide age:</p>
+        <input type="number">
+      </li>
+      <li>
+        <p>Enter you email address:</p>
+        <input type="email">
+      </li>
+      <br>
+      <li>
+        <label for="avatar">Choose profile photo:</label>
+        <input type="file" id="avatar" accept="image/jpeg,image/image/x-png">
+      </li>
+      <br>
+      <li>
+        <div>
+          <label for="username">Enter user name:</label>
+          <input type="text" id="username">
+        </div>
+        <br>
+        <div>
+          <label for="password">Enter password:</label>
+          <input type="password" id="password" maxlength="5" minlength="5">
+        </div>
+      </li>
+      <br>
+      <li>
+        <label for="url">Enter your https url</label>
+        <input type="url" name="url" id="url" pattern="https://.*" size="30" required>
+      </li>
+      <br>
+      <li>
+        <label for="message">Enter your message:</label>
+        <textarea name="message" id="message" rows="8" cols="80"></textarea>
+      </li>
+      <br>
+      <li>
+        <label for="submit">Click on submit to provide all details.</label>
+        <input type="submit" id="submit">
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>
